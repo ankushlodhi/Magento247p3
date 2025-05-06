@@ -1,0 +1,45 @@
+# Magento 2 .gitignore
+
+# Ignore hidden system files
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+
+# Ignore Composer lock file if you're managing dependencies differently
+composer.lock
+
+# Magento specific generated files
+/var/
+/generated/
+/pub/static/*
+!/pub/static/.htaccess
+/vendor/
+/app/etc/env.php
+/app/etc/config.php
+
+# Cache and logs
+*.log
+*.csv
+
+# IDEs & Editors
+.vscode/
+nbproject/
+*.sublime-project
+*.sublime-workspace
+
+# Deployment Tools
+/deploy/
+/node_modules/
+/grunt/
+/phpserver/
+
+# NPM, Yarn
+package-lock.json
+yarn.lock
+
+# PHPUnit
+.phpunit.result.cache
+
+# Static Content Exclude
+/static/
